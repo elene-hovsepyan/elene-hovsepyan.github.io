@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
@@ -15,73 +11,64 @@
 
     <title>Elene Hovsepyan | Data & AI Portfolio</title>
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <header class="site-header">
-        <nav class="navbar container">
+    <header class="site-header" id="siteHeader">
+        <div class="header-shell container">
+            <nav class="navbar">
+                <a href="#home" class="logo" aria-label="Homepage">
+                    EH<span>.</span>
+                </a>
 
-            <a href="#home" class="logo" aria-label="Homepage">
-                EH<span>.</span>
-            </a>
+                <div class="desktop-navigation">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
 
-            <div class="desktop-navigation">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
+                <div class="navigation-actions">
+                    <button class="theme-button" id="themeButton" aria-label="Change website theme">
+                        <span id="themeIcon">☾</span>
+                    </button>
 
-            <div class="navigation-actions">
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        aria-label="Open navigation"
+                        aria-expanded="false"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
 
-                <button
-                    class="theme-button"
-                    id="themeButton"
-                    aria-label="Change website theme"
-                >
-                    <span id="themeIcon">☾</span>
-                </button>
-
-                <button
-                    class="menu-button"
-                    id="menuButton"
-                    aria-label="Open navigation"
-                    aria-expanded="false"
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-            </div>
-
-            <div class="mobile-navigation" id="mobileNavigation">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-        </nav>
+                <div class="mobile-navigation" id="mobileNavigation">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-
-        <!-- HERO -->
-
         <section class="hero-section" id="home">
-
-            <div class="hero-decoration hero-decoration-one"></div>
-            <div class="hero-decoration hero-decoration-two"></div>
+            <div class="hero-cloud hero-cloud-one"></div>
+            <div class="hero-cloud hero-cloud-two"></div>
+            <div class="hero-cloud hero-cloud-three"></div>
 
             <div class="container hero-grid">
-
                 <div class="hero-content reveal">
-
                     <div class="availability-badge">
                         <span class="availability-dot"></span>
                         Open to remote Data & AI opportunities
@@ -90,24 +77,21 @@
                     <p class="hero-introduction">Hello, I’m</p>
 
                     <h1>
-                        Elene
-                        <span>Hovsepyan.</span>
+                        <span class="full-name-accent">Elene V</span><br>
+                        <span class="full-name-accent1">Hovsepyan</span>
                     </h1>
 
                     <h2>
-                        Data Scientist, AI Engineer
-                        <span class="hero-divider">and</span>
-                        analytical problem-solver.
+                        Data Scientist, AI Engineer and analytical problem-solver.
                     </h2>
 
                     <p class="hero-description">
-                        I create data-driven tools, machine-learning solutions,
-                        analytical systems, and AI-powered automations that turn
+                        I build data-driven systems, machine-learning solutions,
+                        analytical tools, and AI-powered automations that turn
                         complex information into practical business value.
                     </p>
 
                     <div class="hero-actions">
-
                         <a href="#projects" class="button primary-button">
                             Explore my work
                             <span>→</span>
@@ -121,40 +105,20 @@
                         >
                             View my CV
                         </a>
-
                     </div>
 
-                    <div class="hero-socials">
-
-                        <a
-                            href="https://github.com/elene-hovsepyan"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                        </a>
-
-                        <a
-                            href="https://www.linkedin.com/in/elene-hovsepyan-9409a1248/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn
-                        </a>
-
-                        <a href="mailto:elene.hovsepyan@gmail.com">
-                            Email
-                        </a>
-
+                    <div class="hero-socials hero-socials-aligned">
+                        <a href="https://github.com/elene-hovsepyan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/elene-hovsepyan-9409a1248/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="mailto:elene.hovsepyan@gmail.com">Email</a>
                     </div>
-
                 </div>
 
                 <div class="hero-visual reveal">
+                    <div class="portrait-cloud portrait-cloud-back"></div>
+                    <div class="portrait-cloud portrait-cloud-front"></div>
 
-                    <div class="portrait-background"></div>
-
-                    <div class="portrait-frame">
+                    <div class="portrait-frame portrait-frame-clean">
                         <img
                             src="assets/images/EleneHPhoto.jpeg"
                             alt="Portrait of Elene Hovsepyan"
@@ -162,49 +126,34 @@
                         >
                     </div>
 
-                    <div class="floating-card floating-card-top">
-                        <span class="floating-label">Current focus</span>
+                    <div class="floating-card floating-card-top hover-float-card">
+                        <span>Current focus</span>
                         <strong>Data, AI & Automation</strong>
                     </div>
 
-                    <div class="floating-card floating-card-bottom">
-                        <span class="floating-label">Based in</span>
+                    <div class="floating-card floating-card-bottom hover-float-card">
+                        <span>Based in</span>
                         <strong>Yerevan, Armenia</strong>
                     </div>
-
                 </div>
-
             </div>
 
             <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
                 <span>Scroll</span>
                 <span class="scroll-line"></span>
             </a>
-
         </section>
 
-        <!-- ABOUT -->
-
         <section class="section about-section" id="about">
-
             <div class="container">
-
-                <div class="section-heading reveal">
-                    <p class="section-number">01</p>
-
-                    <div>
+                <div class="about-layout">
+                    <div class="about-main reveal">
+                        <p class="section-number">01</p>
                         <p class="section-label">About me</p>
 
-                        <h2>
-                            Technical thinking with a
-                            human perspective.
+                        <h2 class="about-title">
+                            Technical thinking with a human perspective.
                         </h2>
-                    </div>
-                </div>
-
-                <div class="about-layout">
-
-                    <div class="about-main reveal">
 
                         <p class="large-paragraph">
                             I am completing my bachelor’s degree in Data Science
@@ -216,9 +165,7 @@
                         <p>
                             My work sits at the intersection of data analysis,
                             artificial intelligence, automation, research, and
-                            business problem-solving. I enjoy taking complicated
-                            processes and transforming them into clear,
-                            functional systems.
+                            business problem-solving.
                         </p>
 
                         <p>
@@ -229,17 +176,12 @@
                             strengthened both my technical foundations and my
                             ability to explain difficult ideas clearly.
                         </p>
-
                     </div>
 
                     <aside class="about-details reveal">
-
                         <div class="detail-item">
                             <span>Education</span>
-                            <strong>
-                                B.S. Data Science<br>
-                                American University of Armenia
-                            </strong>
+                            <strong>B.S. Data Science<br>American University of Armenia</strong>
                         </div>
 
                         <div class="detail-item">
@@ -259,84 +201,58 @@
 
                         <div class="detail-item">
                             <span>Interests</span>
-                            <strong>
-                                Data Analytics, Machine Learning,
-                                AI Automation, GIS
-                            </strong>
+                            <strong>Data Analytics, Machine Learning, AI Automation, GIS</strong>
                         </div>
-
                     </aside>
-
                 </div>
 
                 <div class="statistics-grid reveal">
-
                     <article class="statistic">
                         <strong>1+</strong>
-                        <span>Year of professional AI and software experience</span>
+                        <span>Year of professional AI and software engineering experience</span>
                     </article>
 
                     <article class="statistic">
                         <strong>8+</strong>
-                        <span>Technical and analytical projects</span>
+                        <span>Technical projects across AI, data, BI and databases</span>
                     </article>
 
                     <article class="statistic">
                         <strong>3</strong>
-                        <span>Languages spoken professionally</span>
+                        <span>Professional directions: AI Engineering, Data Science and Analytics</span>
                     </article>
-
-                    <article class="statistic">
-                        <strong>∞</strong>
-                        <span>Curiosity for meaningful problems</span>
-                    </article>
-
                 </div>
-
             </div>
         </section>
 
-        <!-- EXPERIENCE -->
-
         <section class="section experience-section" id="experience">
-
             <div class="container">
-
                 <div class="section-heading reveal">
                     <p class="section-number">02</p>
-
                     <div>
                         <p class="section-label">Experience</p>
                         <h2>Work that combines technology and impact.</h2>
                     </div>
                 </div>
 
-                <div class="experience-list">
-
-                    <article class="experience-item reveal">
-
-                        <div class="experience-date">
-                            2025 — Present
-                        </div>
-
-                        <div class="experience-information">
-
-                            <div class="experience-title-row">
+                <div class="timeline" id="careerTimeline">
+                    <div class="timeline-progress" id="timelineProgress"></div>
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">2025 — Present</div>
+                        <div class="timeline-card">
+                            <div class="timeline-card-header">
                                 <div>
                                     <h3>Junior AI Engineer</h3>
                                     <p>LinkyJuice</p>
                                 </div>
-
-                                <span class="experience-type">
-                                    Professional
-                                </span>
+                                <span>Professional</span>
                             </div>
 
-                            <p class="experience-description">
+                            <p>
                                 Build AI-powered automation systems supporting
                                 keyword discovery, web research, SEO analysis,
-                                outreach, data processing, and internal business
-                                workflows.
+                                outreach, data processing, and internal business workflows.
                             </p>
 
                             <div class="technology-list">
@@ -347,34 +263,25 @@
                                 <span>Automation</span>
                                 <span>Webflow</span>
                             </div>
-
                         </div>
-
                     </article>
 
-                    <article class="experience-item reveal">
-
-                        <div class="experience-date">
-                            Research
-                        </div>
-
-                        <div class="experience-information">
-
-                            <div class="experience-title-row">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Jul 2025 — Feb 2026</div>
+                        <div class="timeline-card">
+                            <div class="timeline-card-header">
                                 <div>
                                     <h3>Research Assistant</h3>
                                     <p>AUA Acopian Center for the Environment</p>
                                 </div>
-
-                                <span class="experience-type">
-                                    Research
-                                </span>
+                                <span>Research</span>
                             </div>
 
-                            <p class="experience-description">
+                            <p>
                                 Supported environmental research through GIS,
-                                spatial analysis, survey organization, dataset
-                                preparation, and interactive information tools.
+                                spatial analysis, survey organization, dataset preparation,
+                                and interactive information tools.
                             </p>
 
                             <div class="technology-list">
@@ -384,35 +291,25 @@
                                 <span>Research</span>
                                 <span>Environmental Data</span>
                             </div>
-
                         </div>
-
                     </article>
 
-                    <article class="experience-item reveal">
-
-                        <div class="experience-date">
-                            Ongoing
-                        </div>
-
-                        <div class="experience-information">
-
-                            <div class="experience-title-row">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Jun 2026 — Present</div>
+                        <div class="timeline-card">
+                            <div class="timeline-card-header">
                                 <div>
                                     <h3>Python Instructor</h3>
                                     <p>Artsakhy Center</p>
                                 </div>
-
-                                <span class="experience-type">
-                                    Teaching
-                                </span>
+                                <span>Teaching</span>
                             </div>
 
-                            <p class="experience-description">
-                                Teach introductory programming, Python
-                                fundamentals, Boolean logic, conditions,
-                                problem-solving, and computational thinking
-                                to young learners.
+                            <p>
+                                Teach introductory programming, Python fundamentals,
+                                Boolean logic, conditions, problem-solving, and
+                                computational thinking to young learners.
                             </p>
 
                             <div class="technology-list">
@@ -421,339 +318,433 @@
                                 <span>Mentoring</span>
                                 <span>Communication</span>
                             </div>
-
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
         </section>
 
-        <!-- PROJECTS -->
-
         <section class="section projects-section" id="projects">
-
             <div class="container">
-
                 <div class="section-heading reveal">
                     <p class="section-number">03</p>
-
                     <div>
                         <p class="section-label">Selected projects</p>
                         <h2>Ideas transformed into working systems.</h2>
                     </div>
                 </div>
 
-                <div class="featured-projects">
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-media project-media-automation">
+                            <div class="project-media-grid"></div>
+                            <span>Automation</span>
+                            <strong>AI</strong>
+                            <p>Research workflow automation</p>
+                        </div>
+                        <div class="project-card-content">
+                            <p class="project-index">Project 01</p>
+                            <h3>AI Research Automation</h3>
+                            <p>Automated keyword processing, AI-assisted web research, source discovery, URL validation, and Google Sheets workflows.</p>
+                            <div class="technology-list"><span>Python</span><span>Selenium</span><span>Google Sheets</span><span>Docker</span></div>
+                            <a href="https://github.com/elene-hovsepyan/AI-Research-Automation" target="_blank" rel="noopener noreferrer" class="text-link">View repository <span>↗</span></a>
+                        </div>
+                    </article>
 
-                    <article class="featured-project reveal">
-
-                        <div class="project-visual project-visual-air">
+                    <article class="project-card reveal">
+                        <div class="project-media project-media-air">
+                            <div class="project-media-grid"></div>
                             <span>Machine Learning</span>
                             <strong>PM2.5</strong>
-                            <p>Air-quality prediction</p>
+                            <p>Global air-quality prediction</p>
                         </div>
-
-                        <div class="project-content">
-
-                            <p class="project-index">Project 01</p>
-
-                            <h3>Global Air Quality Prediction</h3>
-
-                            <p>
-                                Built and compared machine-learning models to
-                                predict PM2.5 pollution using more than 23,000
-                                global observations. Evaluated performance using
-                                MAE, RMSE, R², and adjusted R².
-                            </p>
-
-                            <div class="technology-list">
-                                <span>Python</span>
-                                <span>Pandas</span>
-                                <span>Scikit-learn</span>
-                                <span>Random Forest</span>
-                            </div>
-
-                            <a
-                                href="https://github.com/elene-hovsepyan"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-link"
-                            >
-                                View project
-                                <span>↗</span>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                    <article class="featured-project reverse-project reveal">
-
-                        <div class="project-visual project-visual-ai">
-                            <span>Artificial Intelligence</span>
-                            <strong>A*</strong>
-                            <p>Online replanning agent</p>
-                        </div>
-
-                        <div class="project-content">
-
+                        <div class="project-card-content">
                             <p class="project-index">Project 02</p>
-
-                            <h3>Truck Refueling AI Agent</h3>
-
-                            <p>
-                                Developed an intelligent planning system using
-                                A* search and online replanning to select
-                                cost-efficient refueling decisions under
-                                uncertain fuel-station availability.
-                            </p>
-
-                            <div class="technology-list">
-                                <span>Java</span>
-                                <span>A* Search</span>
-                                <span>AI Planning</span>
-                                <span>Online Replanning</span>
-                            </div>
-
-                            <a
-                                href="https://github.com/elene-hovsepyan"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-link"
-                            >
-                                View project
-                                <span>↗</span>
-                            </a>
-
+                            <h3>Global Air Pollution ML</h3>
+                            <p>Compared regression models on more than 23,000 observations to predict PM2.5 levels and evaluate environmental risk.</p>
+                            <div class="technology-list"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Random Forest</span></div>
+                            <a href="https://github.com/elene-hovsepyan/Global-Air-Pollution-ML" target="_blank" rel="noopener noreferrer" class="text-link">View repository <span>↗</span></a>
                         </div>
-
                     </article>
 
-                    <article class="featured-project reveal">
+                    <article class="project-card reveal">
+                        <div class="project-media project-media-battleship">
+                            <div class="project-media-grid"></div>
+                            <span>Artificial Intelligence</span>
+                            <strong>AI</strong>
+                            <p>Probabilistic and Bayesian agents</p>
+                        </div>
+                        <div class="project-card-content">
+                            <p class="project-index">Project 03</p>
+                            <h3>Battleship Search Algorithms</h3>
+                            <p>A Battleship simulator with multiple AI strategies, human-vs-AI play, batch experiments, and statistical reporting.</p>
+                            <div class="technology-list"><span>Python</span><span>Pygame</span><span>Bayesian AI</span><span>Simulation</span></div>
+                            <a href="https://github.com/elene-hovsepyan/Battleship-Search-Algorithms" target="_blank" rel="noopener noreferrer" class="text-link">View repository <span>↗</span></a>
+                        </div>
+                    </article>
 
-                        <div class="project-visual project-visual-business">
+                    <article class="project-card reveal">
+                        <div class="project-media project-media-bi">
+                            <div class="project-media-grid"></div>
                             <span>Business Intelligence</span>
                             <strong>BI</strong>
-                            <p>Data warehouse architecture</p>
+                            <p>Dimensional data warehouse</p>
                         </div>
-
-                        <div class="project-content">
-
-                            <p class="project-index">Project 03</p>
-
-                            <h3>Business Intelligence Warehouse</h3>
-
-                            <p>
-                                Designed a dimensional data warehouse with
-                                staging tables, fact tables, slowly changing
-                                dimensions, ETL logic, and reporting-oriented
-                                data structures.
-                            </p>
-
-                            <div class="technology-list">
-                                <span>SQL Server</span>
-                                <span>Docker</span>
-                                <span>ETL</span>
-                                <span>Data Warehousing</span>
-                            </div>
-
-                            <a
-                                href="https://github.com/elene-hovsepyan"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="text-link"
-                            >
-                                View project
-                                <span>↗</span>
-                            </a>
-
+                        <div class="project-card-content">
+                            <p class="project-index">Project 04</p>
+                            <h3>Business Intelligence Data Warehouse</h3>
+                            <p>Built an ETL pipeline, staging layer, dimensional model, fact tables, logging, and reporting-oriented data structures.</p>
+                            <div class="technology-list"><span>SQL Server</span><span>Python</span><span>ETL</span><span>Power BI</span></div>
+                            <a href="https://github.com/elene-hovsepyan/Business-Intelligence-Data-Warehouse" target="_blank" rel="noopener noreferrer" class="text-link">View repository <span>↗</span></a>
                         </div>
-
                     </article>
 
+                    <article class="project-card reveal">
+                        <div class="project-media project-media-database">
+                            <div class="project-media-grid"></div>
+                            <span>Database Design</span>
+                            <strong>SQL</strong>
+                            <p>Normalized government records model</p>
+                        </div>
+                        <div class="project-card-content">
+                            <p class="project-index">Project 05</p>
+                            <h3>Government Records Database</h3>
+                            <p>Designed a normalized relational database with functions, views, indexes, triggers, test scripts, and ER documentation.</p>
+                            <div class="technology-list"><span>MySQL</span><span>BCNF</span><span>Triggers</span><span>ER Modeling</span></div>
+                            <a href="https://github.com/elene-hovsepyan/Government-Records-Database" target="_blank" rel="noopener noreferrer" class="text-link">View repository <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media project-media-movies">
+                            <div class="project-media-grid"></div>
+                            <span>Data Analytics</span>
+                            <strong>TMDB</strong>
+                            <p>Movie exploration and analytics</p>
+                        </div>
+                        <div class="project-card-content">
+                            <p class="project-index">Project 06</p>
+                            <h3>TMDB Movie Analytics</h3>
+                            <p>Cleaned and explored a large movie dataset and created interactive tools for movie lookup, filtering, and discovery.</p>
+                            <div class="technology-list"><span>Python</span><span>Pandas</span><span>Jupyter</span><span>R</span></div>
+                            <a href="https://github.com/elene-hovsepyan/TMDB-Movie-Analytics" target="_blank" rel="noopener noreferrer" class="text-link">View repository <span>↗</span></a>
+                        </div>
+                    </article>
                 </div>
-
-                <div class="additional-projects reveal">
-
-                    <article class="small-project-card">
-                        <p>Automation</p>
-                        <h3>AI Keyword Discovery System</h3>
-                        <span>Search APIs · AI · Domain extraction</span>
-                    </article>
-
-                    <article class="small-project-card">
-                        <p>Environmental Analytics</p>
-                        <h3>Urban Sustainability GIS Analysis</h3>
-                        <span>ArcGIS · NDVI · Spatial accessibility</span>
-                    </article>
-
-                    <article class="small-project-card">
-                        <p>Data Visualization</p>
-                        <h3>Interactive Analytical Dashboards</h3>
-                        <span>Power BI · Tableau · Data storytelling</span>
-                    </article>
-
-                </div>
-
             </div>
         </section>
 
-        <!-- SKILLS -->
-
         <section class="section skills-section" id="skills">
-
             <div class="container">
-
                 <div class="section-heading reveal">
                     <p class="section-number">04</p>
-
                     <div>
                         <p class="section-label">Skills</p>
-                        <h2>A multidisciplinary technical toolkit.</h2>
+                        <h2>Skills that organize themselves into the way I work.</h2>
                     </div>
                 </div>
 
-                <div class="skills-layout">
+                <p class="skills-introduction reveal">
+                    As you move through this section, individual tools settle into
+                    their professional families. Select any skill to see where I
+                    learned it and how I use it.
+                </p>
 
-                    <article class="skill-group reveal">
-                        <span class="skill-number">01</span>
-                        <h3>Programming</h3>
-                        <p>
-                            Python, SQL, R, Java, JavaScript,
-                            Google Apps Script
-                        </p>
+                <div class="skill-system" id="skillSystem">
+
+                    <article class="skill-family reveal" data-family="programming">
+                        <button class="skill-family-heading" type="button" aria-expanded="true">
+                            <span class="skill-family-number">01</span>
+                            <span>
+                                <strong>Programming & Automation</strong>
+                                <small>Building tools, workflows and applications</small>
+                            </span>
+                            <span class="family-toggle">−</span>
+                        </button>
+
+                        <div class="skill-family-content">
+                            <div class="skill-cluster">
+                                <button class="skill-chip" type="button"
+                                    data-title="Python"
+                                    data-description="My primary language for machine learning, automation, data processing, teaching and analytical applications."
+                                    data-learned="University coursework, professional AI engineering, personal projects and Python instruction.">
+                                    Python
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Java"
+                                    data-description="Used for object-oriented programming and artificial-intelligence coursework, including search and agent projects."
+                                    data-learned="Programming and Artificial Intelligence courses at AUA.">
+                                    Java
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="JavaScript"
+                                    data-description="Used to add interaction and behavior to websites and internal tools."
+                                    data-learned="Portfolio development, Webflow customization and workplace web projects.">
+                                    JavaScript
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Google Apps Script"
+                                    data-description="Used for spreadsheet automation, API connections and workflow orchestration."
+                                    data-learned="Professional automation work and internal outreach systems.">
+                                    Apps Script
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Selenium"
+                                    data-description="Used for browser automation, persistent sessions and structured web workflows."
+                                    data-learned="AI Research Automation project and professional experimentation.">
+                                    Selenium
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="REST APIs"
+                                    data-description="Used to connect search, AI, analytics and business systems."
+                                    data-learned="Professional AI engineering and automation projects.">
+                                    REST APIs
+                                </button>
+                            </div>
+                        </div>
                     </article>
 
-                    <article class="skill-group reveal">
-                        <span class="skill-number">02</span>
-                        <h3>Data Science</h3>
-                        <p>
-                            Pandas, NumPy, Scikit-learn, statistical analysis,
-                            feature engineering, model evaluation
-                        </p>
+                    <article class="skill-family reveal" data-family="data">
+                        <button class="skill-family-heading" type="button" aria-expanded="true">
+                            <span class="skill-family-number">02</span>
+                            <span>
+                                <strong>Data Science & Machine Learning</strong>
+                                <small>Preparing data, training models and evaluating results</small>
+                            </span>
+                            <span class="family-toggle">−</span>
+                        </button>
+
+                        <div class="skill-family-content">
+                            <div class="skill-cluster">
+                                <button class="skill-chip" type="button"
+                                    data-title="Pandas"
+                                    data-description="Data cleaning, transformation, exploration and pipeline preparation."
+                                    data-learned="Machine Learning, Programming for Data Science and professional projects.">
+                                    Pandas
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="NumPy"
+                                    data-description="Numerical operations and array-based data preparation."
+                                    data-learned="Machine Learning and Data Science coursework.">
+                                    NumPy
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Scikit-learn"
+                                    data-description="Regression, classification, preprocessing, model comparison and evaluation."
+                                    data-learned="Machine Learning coursework and the Global Air Pollution project.">
+                                    Scikit-learn
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Statistical Analysis"
+                                    data-description="Hypothesis testing, correlation analysis, survey analysis and interpretation."
+                                    data-learned="Statistics coursework and environmental recycling research.">
+                                    Statistics
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Model Evaluation"
+                                    data-description="Using MAE, RMSE, R², adjusted R² and classification metrics to compare models."
+                                    data-learned="Machine Learning coursework and predictive modeling projects.">
+                                    Model Evaluation
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="R"
+                                    data-description="Statistical analysis, visualization and reproducible reports."
+                                    data-learned="Statistics and Data Visualization coursework.">
+                                    R
+                                </button>
+                            </div>
+                        </div>
                     </article>
 
-                    <article class="skill-group reveal">
-                        <span class="skill-number">03</span>
-                        <h3>Analytics & BI</h3>
-                        <p>
-                            Power BI, Tableau, Metabase, Excel,
-                            dimensional modelling, data warehousing
-                        </p>
+                    <article class="skill-family reveal" data-family="analytics">
+                        <button class="skill-family-heading" type="button" aria-expanded="true">
+                            <span class="skill-family-number">03</span>
+                            <span>
+                                <strong>Analytics & Business Intelligence</strong>
+                                <small>Turning structured data into decisions</small>
+                            </span>
+                            <span class="family-toggle">−</span>
+                        </button>
+
+                        <div class="skill-family-content">
+                            <div class="skill-cluster">
+                                <button class="skill-chip" type="button"
+                                    data-title="Power BI"
+                                    data-description="Dashboard design, analytical reporting and business-focused visualization."
+                                    data-learned="Business Intelligence coursework and data warehouse projects.">
+                                    Power BI
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Tableau"
+                                    data-description="Visual exploration and presentation of analytical findings."
+                                    data-learned="Data visualization practice and independent analytics work.">
+                                    Tableau
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Metabase"
+                                    data-description="Query-based dashboards and internal analytical reporting."
+                                    data-learned="Professional and project-based analytics work.">
+                                    Metabase
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Excel"
+                                    data-description="Data preparation, validation, reporting and spreadsheet-based analysis."
+                                    data-learned="University, research and professional workflows.">
+                                    Excel
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Data Warehousing"
+                                    data-description="Staging, dimensional models, facts, dimensions and ETL-oriented architecture."
+                                    data-learned="Business Intelligence course and warehouse project.">
+                                    Data Warehousing
+                                </button>
+                            </div>
+                        </div>
                     </article>
 
-                    <article class="skill-group reveal">
-                        <span class="skill-number">04</span>
-                        <h3>Development</h3>
-                        <p>
-                            REST APIs, Git, GitHub, Docker, Selenium,
-                            Webflow, automation workflows
-                        </p>
+                    <article class="skill-family reveal" data-family="databases">
+                        <button class="skill-family-heading" type="button" aria-expanded="true">
+                            <span class="skill-family-number">04</span>
+                            <span>
+                                <strong>Databases & Infrastructure</strong>
+                                <small>Designing reliable structures for data</small>
+                            </span>
+                            <span class="family-toggle">−</span>
+                        </button>
+
+                        <div class="skill-family-content">
+                            <div class="skill-cluster">
+                                <button class="skill-chip" type="button"
+                                    data-title="SQL"
+                                    data-description="Queries, joins, transformations, schema design and analytical extraction."
+                                    data-learned="Database Systems, Business Intelligence and professional analytics work.">
+                                    SQL
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="PostgreSQL"
+                                    data-description="Relational data storage and query development."
+                                    data-learned="Database coursework and software projects.">
+                                    PostgreSQL
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="MySQL"
+                                    data-description="Relational modeling, functions, views, indexes and triggers."
+                                    data-learned="Government Records Database project.">
+                                    MySQL
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="SQL Server"
+                                    data-description="Dimensional warehouse implementation and ETL workflows."
+                                    data-learned="Business Intelligence Data Warehouse project.">
+                                    SQL Server
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Docker"
+                                    data-description="Reproducible development environments and service deployment."
+                                    data-learned="Business Intelligence and AI automation projects.">
+                                    Docker
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Git & GitHub"
+                                    data-description="Version control, repository organization and project presentation."
+                                    data-learned="Academic, professional and personal software projects.">
+                                    Git & GitHub
+                                </button>
+                            </div>
+                        </div>
                     </article>
 
-                    <article class="skill-group reveal">
-                        <span class="skill-number">05</span>
-                        <h3>Databases</h3>
-                        <p>
-                            PostgreSQL, MySQL, SQL Server,
-                            ETL processes and relational modelling
-                        </p>
-                    </article>
+                    <article class="skill-family reveal" data-family="gis">
+                        <button class="skill-family-heading" type="button" aria-expanded="true">
+                            <span class="skill-family-number">05</span>
+                            <span>
+                                <strong>GIS & Environmental Analytics</strong>
+                                <small>Understanding systems through location</small>
+                            </span>
+                            <span class="family-toggle">−</span>
+                        </button>
 
-                    <article class="skill-group reveal">
-                        <span class="skill-number">06</span>
-                        <h3>GIS & Environment</h3>
-                        <p>
-                            ArcGIS, QGIS, Google Earth Engine,
-                            spatial analysis and environmental data
-                        </p>
+                        <div class="skill-family-content">
+                            <div class="skill-cluster">
+                                <button class="skill-chip" type="button"
+                                    data-title="ArcGIS"
+                                    data-description="Spatial analysis, mapping and environmental research."
+                                    data-learned="AUA Acopian Center research and GIS coursework.">
+                                    ArcGIS
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="QGIS"
+                                    data-description="Open-source spatial analysis and map creation."
+                                    data-learned="Environmental Science studies and research work.">
+                                    QGIS
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Google Earth Engine"
+                                    data-description="Satellite-based environmental analysis and geospatial processing."
+                                    data-learned="Environmental analytics coursework and independent practice.">
+                                    Google Earth Engine
+                                </button>
+                                <button class="skill-chip" type="button"
+                                    data-title="Spatial Analysis"
+                                    data-description="Accessibility, environmental conditions and location-based relationships."
+                                    data-learned="Research assistantship and sustainability projects.">
+                                    Spatial Analysis
+                                </button>
+                            </div>
+                        </div>
                     </article>
 
                 </div>
+            </div>
 
+            <div class="skill-modal" id="skillModal" aria-hidden="true">
+                <button class="skill-modal-backdrop" id="skillModalBackdrop" aria-label="Close skill details"></button>
+                <div class="skill-modal-card" role="dialog" aria-modal="true" aria-labelledby="skillModalTitle">
+                    <button class="skill-modal-close" id="skillModalClose" type="button" aria-label="Close skill details">×</button>
+                    <p class="skill-modal-label">Skill details</p>
+                    <h3 id="skillModalTitle">Python</h3>
+                    <p id="skillModalDescription"></p>
+                    <div class="skill-modal-source">
+                        <span>Where I developed it</span>
+                        <p id="skillModalLearned"></p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- CONTACT -->
-
         <section class="contact-section" id="contact">
-
-            <div class="contact-decoration"></div>
-
             <div class="container contact-content reveal">
-
                 <p class="section-label">Let’s work together</p>
 
-                <h2>
-                    Have a meaningful problem
-                    that data can solve?
-                </h2>
+                <h2>Have a meaningful problem that data can solve?</h2>
 
                 <p>
                     I am currently interested in remote opportunities involving
                     data analysis, machine learning, AI automation, business
-                    intelligence, environmental analytics, and technical
-                    problem-solving.
+                    intelligence, environmental analytics, and technical problem-solving.
                 </p>
 
-                <a
-                    href="mailto:elene.hovsepyan@gmail.com"
-                    class="button contact-button"
-                >
+                <a href="mailto:elene.hovsepyan@gmail.com" class="button contact-button">
                     Start a conversation
                     <span>→</span>
                 </a>
 
                 <div class="contact-links">
-
-                    <a
-                        href="https://github.com/elene-hovsepyan"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/elene-hovsepyan-9409a1248/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                    <a href="mailto:elene.hovsepyan@gmail.com">
-                        Email
-                    </a>
-
+                    <a href="https://github.com/elene-hovsepyan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/elene-hovsepyan-9409a1248/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:elene.hovsepyan@gmail.com">Email</a>
                 </div>
-
             </div>
-
         </section>
-
     </main>
 
     <footer class="site-footer">
-
         <div class="container footer-content">
-
-            <p>
-                © <span id="currentYear"></span> Elene Hovsepyan
-            </p>
-
-            <p>
-                Designed and developed with care.
-            </p>
-
+            <p>© <span id="currentYear"></span> Elene Hovsepyan</p>
+            <p>Designed and developed with care.</p>
         </div>
-
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
