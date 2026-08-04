@@ -42,7 +42,7 @@ if (currentYear) {
 
 
 // ======================================================
-// FLOATING HEADER
+// HEADER
 // ======================================================
 
 function updateHeader() {
@@ -323,7 +323,7 @@ if (
 
 
 // ======================================================
-// CAREER TIMELINE PROGRESS
+// EXPERIENCE TIMELINE PROGRESS
 // ======================================================
 
 const careerTimeline =
@@ -407,6 +407,70 @@ updateTimelineProgress();
 
 
 // ======================================================
+// PROJECT ACCORDION
+// ======================================================
+
+const projectPanels =
+    document.querySelectorAll(
+        ".project-panel"
+    );
+
+projectPanels.forEach(
+    (panel) => {
+        const toggle =
+            panel.querySelector(
+                ".project-toggle"
+            );
+
+        if (!toggle) {
+            return;
+        }
+
+        toggle.addEventListener(
+            "click",
+            () => {
+                const panelIsOpen =
+                    panel.classList.contains(
+                        "is-active"
+                    );
+
+                projectPanels.forEach(
+                    (otherPanel) => {
+                        otherPanel.classList.remove(
+                            "is-active"
+                        );
+
+                        const otherToggle =
+                            otherPanel.querySelector(
+                                ".project-toggle"
+                            );
+
+                        if (otherToggle) {
+                            otherToggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+                        }
+                    }
+                );
+
+                if (!panelIsOpen) {
+                    panel.classList.add(
+                        "is-active"
+                    );
+
+                    toggle.setAttribute(
+                        "aria-expanded",
+                        "true"
+                    );
+                }
+            }
+        );
+    }
+);
+
+
+// ======================================================
 // SKILL FAMILY ACCORDIONS
 // ======================================================
 
@@ -457,7 +521,7 @@ skillFamilies.forEach(
 
 
 // ======================================================
-// SKILLS SETTLE INTO THEIR GROUPS WHILE SCROLLING
+// SKILLS SETTLE INTO THEIR GROUPS
 // ======================================================
 
 const skillChips =
@@ -711,7 +775,7 @@ if (skillModalBackdrop) {
 
 
 // ======================================================
-// TECHNOLOGY TAG HOVER ACCESSIBILITY
+// TECHNOLOGY TAG KEYBOARD ACCESSIBILITY
 // ======================================================
 
 const technologyTags =
@@ -730,7 +794,7 @@ technologyTags.forEach(
 
 
 // ======================================================
-// WINDOW RESIZE
+// RESIZE
 // ======================================================
 
 window.addEventListener(
