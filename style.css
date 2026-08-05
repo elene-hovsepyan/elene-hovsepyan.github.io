@@ -401,9 +401,11 @@ button {
     display: inline;
 }
 
-.full-name-accent,
-.full-name-accent1 {
+.full-name-accent {
     color: var(--primary);
+}
+.full-name-accent1 {
+    color: var(--text);
 }
 
 .hero-content h2 {
